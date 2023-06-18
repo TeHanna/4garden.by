@@ -52,8 +52,8 @@ h1 {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  /* height: 0;  */
+  overflow: visible;
 }
 
 /**
@@ -75,6 +75,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**

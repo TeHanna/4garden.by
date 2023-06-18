@@ -1,33 +1,58 @@
-//Gallery random
-// function randomImages() {
-//   const pictureInnerContainer = document.querySelector('.picture-inner-container');
+const imgInnerContainer = document.querySelector('.gallery__inner-container');
 
-//   let images = [
-//     '<img src="./assets/img/gallery/galery1.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery2.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery3.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery4.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery5.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery6.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery7.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery8.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery9.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery10.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery11.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery12.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery13.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery14.jpg" alt="img" class="img-gallery">',
-//     '<img src="./assets/img/gallery/galery15.jpg" alt="img" class="img-gallery">',
-// ]
+function shuffle(array) {
+  for (let i = array.length - 1; i > 1; i--) {
+    let j = Math.floor(Math.random() * (i)); 
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
-//   function shuffle(array) {
-//     for (let i = array.length - 1; i > 0; i--) {
-//       let j = Math.floor(Math.random() * (i + 1));
-//       [array[i], array[j]] = [array[j], array[i]];
-//     }
-//     return array;
-//   }
+function mixImages() {
+  let imgPathArr= [];
+  
+  let i = 0;
+  while (i < 15) {
+    imgPathArr[i] = `./assets/img/gallery2/galery${i + 1}.jpg`;
+    i++;
+  }
+  
+  shuffle(imgPathArr);
+  imgInnerContainer.innerHTML = '';
+  imgPathArr.map(image => imgInnerContainer.innerHTML += `<img class="gallery__item" src=${image} alt="Artwork of Louvre collection">`);
+}
 
-//   shuffle(images).map((item) => pictureInnerContainer.innerHTML += item)
-// }
-// randomImages();
+mixImages();
+
+const scroll = window.requestAnimationFrame || 
+               function(callback) {
+                 window.setTimeout(callback, 1000 / 60);
+               };
+const galleryItems = document.querySelectorAll('.gallery__item');
+
+
+function isItemInViewport(item) {
+  const rect = item.getBoundingClientRect();
+  return (
+    (rect.top <= 0 && rect.bottom >= 0)
+    ||
+    (rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+
+function checkVisibility() {
+  Array.prototype.forEach.call(galleryItems, function(item) {
+    if (isItemInViewport(item)) {
+      item.classList.add('show');
+    } else {
+      item.classList.remove('show');
+    }
+  });
+
+  scroll(checkVisibility);
+}
+
+checkVisibility();
+
+

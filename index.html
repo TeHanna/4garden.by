@@ -8,10 +8,229 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="icon" href="./assets/img/favicon.ico">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-  <p>Привет всем желающим любоваться своим красивым садом!</p>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-phone">
+        <div class="socials-topbar">
+          <a href="https://www.instagram.com/4garden.by/" class="social-links"><img src="./assets/img/instagram.svg" alt="4garden" width="17px"></a>
+        </div>
+        <div class="phone-picture"></div><p>+375&nbsp29&nbsp553&nbsp91&nbsp02</p>
+      </div>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#"><img src="./assets/img/logo2.png" alt="4garden" width="180px"></a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="#about" class="header-link">О нас</a></li>
+          <li class="header-item"><a href="#services" class="header-link">Услуги</a></li>
+          <li class="header-item"><a href="#portfolio" class="header-link">Портфолио</a></li>
+          <li class="header-item"><a href="#contacts" class="header-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="main">
+    <!-- Section For garden -->   
+    <section class="for-garden">
+      <div class="shadow">
+      <div class="container container-for-garden">
+        <div class="for-garden-description">
+          <h1 class="section-title-for-garden">Мы создаем сад мечты</h1>
+          <h2 class="section-description-for-garden">Все виды садовых работ</h2>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!-- Section About -->
+    <section class="section-about" id="about">
+      <div class="container container-about">
+        <div class="about-content">
+          <h2 class="section-title-about"><span class="text-title">О нас</span></h2>
+          <p class="description-title-about">Наша команда - это профессионалы, которые любят свое дело</p>
+          <hr class="general-title">
+        </div>
+        <div class="workers">
+          <div class="preview-card hover-image-scale">
+            <img src="./assets/img/worker1.jpg" alt="Холопук" class="preview-image hover-image-scale" width="220">
+            <h3 class="title-card">Геннадий Холопук</h3>
+            <div class="description-card"><p>Инженер лесного хозяйства, кандидат сельскохозяйственных наук, автор декоративных сортов растений, научных статей, книг и технологических регламентов по выращиванию и использованию растений в декоративном садоводстве.</p></div>
+          </div>
+          <div class="preview-card hover-image-scale">
+            <img src="./assets/img/worker2.jpg" alt="Шидловская" class="preview-image hover-image-scale" width="220">
+            <h3 class="title-card">Любовь Шидловская</h3>
+            <div class="description-card"><p>Биолог, исследователь, ландшафтный дизайнер, член Союза дизайнеров Беларуси, участник и призер конкурсов в сфере дизайна, автор научных статей, множество ее частных проектов и проектов общественных пространств воплощены в жизнь.</p></div>
+          </div>
+          <div class="preview-card hover-image-scale">
+            <img src="./assets/img/worker3.jpg" alt="Караневский" class="preview-image hover-image-scale" width="220">
+            <h3 class="title-card">Руслан Караневский</h3>
+            <div class="description-card"><p>Специалист в сфере природопользования, кандидат биологических наук, автор научных статей, технологических регламентов и рекомендаций по защите растений.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <!-- Section Services -->
+    <section class="section-services" id="services">
+      <div class="container container-services">
+        <div class="services-content">
+          <h2 class="section-title-about"><span class="text-title">Услуги</span></h2>
+          <hr class="general-title">
+        </div>
+        <div class="services">
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service1.jpg" alt="Озеленение" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Озеленение</h3>
+            <ul>
+              <li>Выбор стилистического и практического решения</li>
+              <li>Грамотный подбор ассортимента растений</li>
+              <li>Отбор растений в питомнике</li>
+              <li>Вынос решения в натуру</li>
+            </ul>
+          </div>
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service8.jpg" alt="Реконструкция озеленения" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Реконструкция озеленения</h3>
+            <ul>
+              <li>Инвентаризация и оценка состояния растений на объекте</li>
+              <li>Разборка плана реконструкции</li>
+              <li>Процесс реконструкции, включающий работу с сосуществующими посадками, а также дополнение существующих и реконструированных посадок новыми растениями</li>
+              <li>Замена покрытия в декоративных посадках</li>
+            </ul>
+          </div>
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service3.jpg" alt="Обрезка деревьев и кустарников" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Обрезка деревьев и кустарников</h3>
+            <ul>
+              <li>Обрезка плодового сада</li>
+              <li>Формирующая обрезка</li>
+              <li>Санитарная обрезка</li>
+              <li>Омолаживающая обрезка</li>
+              <li>Кронирование</li>
+              <li>Поллардинг</li>
+            </ul>
+          </div>
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service4.jpg" alt="Стрижка растений" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Стрижка растений</h3>
+            <ul>
+              <li>Стрижка живых изгородей</li>
+              <li>Топиарная стрижка</li>
+              <li>Формирование ниваки</li>
+            </ul>
+          </div>
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service5.jpg" alt="Уход за газоном" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Уход за газоном</h3>
+            <ul>
+              <li>Скарификация</li>
+              <li>Внесение удобрений</li>
+              <li>Покос</li>
+              <li>Химпрополка (удаление сорняков, мха)</li>
+            </ul>
+          </div>  
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service6.jpg" alt="Защита растений" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Защита растений</h3>
+            <ul>
+              <li>Обработка от болезней</li>
+              <li>Обработка от вредителей</li>
+            </ul>
+          </div>
+          <div class="service-item hover-image-scale">
+            <div class="service-image"><img src="./assets/img/service7.jpg" alt="Прочие работы" class="hover-image-scale" style="width: 100%;"></div>
+            <h3>Прочие работы</h3>
+            <ul>
+              <li>Обработка участка от иксодовых клещей</li>
+              <li>Отлов кротов</li>
+              <li>Подготовка участка к зиме, укрытие растений</li>
+            </ul>
+          </div>       
+       
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Portfolio (gallery) -->
+    <section id="portfolio" class="gallery section section--dark">
+      <div class="container container-gallery">
+        <h2 class="section__title section__title--light">Портфолио</h2>
+        <div class="gallery__container">
+          <div class="gallery__inner-container">
+          </div>
+          <div class="gallery__bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Advantages -->
+    <section class="section-advantages">
+      <div class="container container-advantages">
+        <div class="advantages-content">
+          <h2 class="section-title-about"><span class="text-title">Наши преимущества</span></h2>
+          <hr class="general-title">
+        </div>
+        <div class="advantages">
+          <div class="advantage-item">
+            <div class="advantage-image education"></div>
+            <h3>Профильное образование</h3>
+            <p>Полученные знания дают понимание природы растений, происходящих в них процессов и механизмов взаимодействия растений с окружающей средой</p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-image experience"></div>
+            <h3>Опыт работы</h3>
+            <p>Многолетняя работа с растениями позволила накопить колоссальный опыт по их размножению, выращиванию и использованию при создании объектов озеленения и последующему уходу за ними</p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-image perfection"></div>
+            <h3>Самосовершенствование</h3>
+            <p>Участие в тематических семинарах, форумах, вебинарах и мастер-классах, в совокупности постоянным совершенствованием навыков на практике, позволяет получить клиентам от нас лучший опыт</p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-image approach"></div>
+            <h3>Индивидуальный подход</h3>
+            <p>Все работы выполняются в соответствии с пожеланиями клиента, с учетом особенностей объекта и имеющегося опыта. Предлагаем варианты решений и пути их реализации</p>
+          </div>         
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax2"></div>
+
+  </main>
+  
+  <footer class="footer" id="contacts">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <a href="#header"><img src="./assets/img/garden-logo-white.png" alt="4garden" width="180px"></a>
+      </div>
+      <div class="footer-working-hours">
+        <p>Часы работы:</p>
+        <p>ЕЖЕДНЕВНО 9:00-20:00</p>
+      </div>
+      <div class="footer-phone">
+        <div class="phone-picture"></div><p>+375&nbsp29&nbsp553&nbsp91&nbsp02</p>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/4garden.by/" class="social-links"><img src="./assets/img/instagram.svg" alt="4garden" width="20px"></a>
+      </div>
+      
+    </div>
+    <div class="container copyright-container">
+      <p class="copy">&copy; 2023<br>4garden.by - все виды садовых работ</p>
+    </div>
+    <div class="footer-leaf"></div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
