@@ -34,7 +34,7 @@ html {
 }
 
 .topbar {
-  background: url(../../assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
+  background: url(./assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
   background-attachment: fixed;
   background-position: center;
 }
@@ -407,7 +407,7 @@ h3.title-card {
 /** ----------- **/
 
 .gallery{
-  background: url(../../assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
+  background: url(./assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
   background-attachment: fixed;
   background-position: center;
 }
@@ -534,7 +534,7 @@ h3.title-card {
 
 .footer {
   position: relative;
-  background: url(../../assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
+  background: url(.assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
   background-attachment: fixed;
   background-position: center;
   padding: 25px 0px 10px 0px;
