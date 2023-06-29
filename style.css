@@ -58,7 +58,9 @@ html {
   padding-left: 30px;
 }
 
-.phone-picture{
+
+
+.phone-picture-mts{
   background: url(./assets/img/mts.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -83,12 +85,12 @@ html {
 .socials-topbar{
   margin-top: 5px;
   margin-left: auto;
-  padding: 0 30px 0 0;
+  padding: 0 40px 0 0;
 }
 
 .social-links{
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .location-picture{
@@ -478,7 +480,7 @@ h3.title-card {
 .gallery__inner-container {
   position: relative;
   display: flex;
-  height: 3020px;
+  height: 3050px;
   flex-wrap: wrap;
   flex-direction: column;
   column-gap: 18px;
@@ -572,12 +574,32 @@ h3.title-card {
   background-repeat: no-repeat;
 }
 
+.parallax3{
+  width: 100%;
+  height: 300px;
+  background-image: url(./assets/img/parallax3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* .shadow2 {
+  background: rgba(0, 0, 0, 0.5);
+  height: 300px;
+} */
+
+.white-footer {
+  height: 50px;
+  background-color: #F6F6F6;
+}
+
+
 .footer {
   position: relative;
   background: url(./assets/img/noise_transparent.png), radial-gradient(85% 215.42% at 0% 0%, #173207 0%, #365118);
   background-attachment: fixed;
   background-position: center;
-  padding: 25px 0px 10px 0px;
+  padding: 50px 0px 10px 0px;
 }
 
 .footer-container{
@@ -613,12 +635,21 @@ h3.title-card {
 
 .footer-phone{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   height: 50px;
   padding: 0 10px 0 10px;
 }
 
-.footer-phone .phone-picture {
+.footer-mts, .footer-life {
+  display: flex;
+  align-items: center;
+}
+
+.footer-life p{
+  margin: 0;
+}
+
+.phone-picture {
   width: 19px;
   height: 19px;
 }
@@ -626,14 +657,12 @@ h3.title-card {
 .footer-phone p{
   color: #FFFFFF;
   font-family: var(--font3);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .socials{
   padding: 15px 0px 0 0;
 }
-
-
 
 .footer-leaf{
   position: absolute;
