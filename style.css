@@ -40,17 +40,64 @@ html {
 }
 
 .topbar-phone {
-  height: 44px;
+  height: 50px;
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
+
 .topbar-phone p {
   margin: 0;
   padding-right: 15px;
   font-family: var(--font3);
   font-size: 15px;
+}
+
+.working-hours{
+  padding-left: 30px;
+}
+
+.phone-picture{
+  background: url(./assets/img/mts.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  padding-right: 7px;
+}
+
+.phone-picture-life{
+  background: url(./assets/img/life.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  height: 19px;
+  padding-right: 7px;
+}
+
+.location, .phone, .socials-topbar{
+  display: flex;
+}
+
+.socials-topbar{
+  margin-top: 5px;
+  margin-left: auto;
+  padding: 0 30px 0 0;
+}
+
+.social-links{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.location-picture{
+  background: url(./assets/img/map2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  padding-right: 7px;
 }
 
 .header {
@@ -99,10 +146,11 @@ html {
 .header-link {
   color: var(--font-color-black);
   font-family: Arial;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   padding: 10px 15px;
+  text-transform: uppercase;
 }
 
 .header-link:hover{
@@ -236,14 +284,6 @@ h3.title-card {
   font-family: var(--font3);
   font-size: 14px;
   color: var(--font-color-grey);
-}
-
-.phone-picture{
-  background: url(./assets/img/phone.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 19px;
-  height: 15px;
 }
 
 .section-advantages{
@@ -587,11 +627,6 @@ h3.title-card {
   color: #FFFFFF;
   font-family: var(--font3);
   font-size: 18px;
-}
-
-.socials-topbar{
-  margin-top: 5px;
-  padding: 0 30px 0 0;
 }
 
 .socials{
