@@ -11,14 +11,14 @@ function mixImages() {
   let imgPathArr= [];
   
   let i = 0;
-  while (i < 15) {
+  while (i < 21) {
     imgPathArr[i] = `./assets/img/gallery2/galery${i + 1}.jpg`;
     i++;
   }
   
   shuffle(imgPathArr);
   imgInnerContainer.innerHTML = '';
-  imgPathArr.map(image => imgInnerContainer.innerHTML += `<img class="gallery__item" src=${image} alt="Artwork of Louvre collection">`);
+  imgPathArr.map(image => imgInnerContainer.innerHTML += `<img class="gallery__item" src=${image} alt="">`);
 }
 
 mixImages();
