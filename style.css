@@ -197,6 +197,7 @@ html {
   letter-spacing: 1px;
   padding: 5px 15px;
   font-size: 38px;
+  text-align: center;
 }
 
 .section-description-for-garden {
@@ -207,6 +208,7 @@ html {
   letter-spacing: 2px;
   font-size: 48px;
   margin-top: 15px;
+  text-align: center;
 }
 
 .section-about {
@@ -241,6 +243,7 @@ html {
 .description-title-about {
   font-size: 18px;
   font-family: var(--font3);
+  text-align: center;
 }
 
 hr.general-title {
@@ -254,16 +257,17 @@ hr.general-title {
 
 .workers {
   margin-top: 40px;
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  column-gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .preview-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px;
+  max-width: 280px;
   padding: 10px;
 }
 
@@ -303,7 +307,8 @@ h3.title-card {
 .advantages{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 40px;
+  justify-content: center;
 }
 
 .advantage-item {
@@ -312,7 +317,7 @@ h3.title-card {
   padding: 30px 20px 20px 20px;
   background-position: center top;
   background-repeat: no-repeat;
-  width: 230px;
+  max-width: 230px;
   text-align: center;
   font-family: var(--font3);
   font-size: 14px;
@@ -391,7 +396,7 @@ h3.title-card {
   padding: 30px 20px 20px 20px;
   background-position: center top;
   background-repeat: no-repeat;
-  width: 230px;
+  max-width: 230px;
   font-family: var(--font3);
   font-size: 14px;
   background: #FFFFFF;
@@ -619,7 +624,7 @@ hr.general-title-white {
 
 .quote{
   padding-top: 60px;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   color: #000000;
   font-style: italic;
@@ -630,7 +635,7 @@ hr.general-title-white {
 
 .quote-author{
   padding-top: 30px;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   color: #000000;
   font-style: italic;
@@ -657,7 +662,7 @@ hr.general-title-white {
   justify-content: space-between;
   min-height: 100px;
   padding-bottom: 10px;
-  width: 900px;
+  max-width: 900px;
 }
 
 .footer-logo{
@@ -730,6 +735,7 @@ hr.general-title-white {
   display: flex;
   justify-content: space-around;
   padding-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 .portfolio-column-one, .portfolio-column-two, .portfolio-column-three{
@@ -745,4 +751,246 @@ hr.general-title-white {
 .responsive{
   max-width: 100%;
   height: auto;
+}
+
+.burger {
+  display: none;
+}
+
+.portfolio-mini {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+
+  .container {
+    padding: 0 80px;
+  }
+
+  .gallery__container {
+    height: 1500px;
+  }
+
+  .footer-leaf {
+    width: 200px;
+    height: 100px;
+  }
+
+  .container-about {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .socials-topbar {
+    padding-right: 10px;
+  }
+
+  .social-links img {
+    width: 17px;
+  }
+
+  .location-picture {
+    width: 17px;
+    height: 17px;
+  }
+
+  .working-hours {
+    padding-left: 15px;
+  }
+
+  .topbar-phone p {
+    font-size: 13px;
+    padding-right: 10px;
+    line-height: 18px;
+  } 
+
+  .social-links {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .section-description-for-garden {
+    font-size: 42px;
+  }
+
+  .header-item {
+    margin-left: 18px;
+  }
+
+  .header-link {
+  font-size: 13px;
+  }
+
+  .gallery__inner-container {
+    height: 2000px;
+  }
+
+  .container-about {
+    padding-bottom: 50px;
+  }
+
+  .workers {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .preview-image {
+    max-width: 180px;
+  }
+
+  .preview-card {
+    max-width: 180px;
+  }
+
+  .white-footer {
+    padding: 0 30px 30px 30px;
+
+  }
+  
+}
+
+
+@media (max-width: 767px) {
+
+.burger {
+  z-index: 10;
+  position: relative;
+  margin-left: auto;
+  display: block;
+  margin-right: 43px;
+  width: 30px;
+  height: 22px;
+  background-image: url(./assets/img/Burger.png);
+  transition: 0.3s; 
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger-active {
+  transform: rotate(90deg);
+  transition: 0.3s; 
+}
+
+.header-nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: -100%;
+  width: 200px;
+  height: 100%;
+  background-color: #212120;
+  padding: 170px 0;
+  transition: right 0.4s ease 0s;
+  overflow: hidden;
+  margin-left: 0; 
+}
+
+.header-link {
+  font-size: 16px;
+  color: #f6f6f6;
+}
+
+.header-nav_active {
+  right: 0; 
+}
+
+.header-list {
+  flex-direction: column;
+  margin: 0 50px 0 0;
+  height: 200px;
+}
+
+
+.gallery__container {
+  display: none;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  min-height: 330px;
+}
+
+.footer-phone {
+  height: 100px;
+}
+
+.quote {
+  font-size: 28px;
+}
+
+.quote-author {
+  font-size: 20px;
+}
+
+.footer-leaf {
+  display: none;
+}
+
+.portfolio-mini {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+.for-garden-description {
+  padding-top: 340px;
+}
+
+.section-description-for-garden {
+  line-height: 60px;
+}
+
+.working-hours, .location {
+  display: none;
+}
+
+.socials-topbar {
+  margin-left: 0;
+}
+}
+
+@media (max-width: 510px) {
+  .section-description-for-garden {
+    line-height: 48px;
+    font-size: 36px;
+  }
+
+  .section-title-for-garden {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar-phone {
+    height: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .phone {
+    margin-bottom: 10px;
+  }
+
+  .socials-topbar {
+    margin-top: 10px;
+  }
 }
